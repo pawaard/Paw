@@ -1,0 +1,63 @@
+<!-- ============ APPLY ============ -->
+<section class="section apply" id="apply">
+  <div class="wrap apply__grid">
+    <div class="apply__copy">
+            <h2 class="h2" data-split data-i18n="ap.title">Your era begins <em>now</em></h2>
+      <p class="sec-head__lead" data-reveal data-i18n="ap.lead">Applications for the 2027 season open soon. Complete the pre-registration form and your national director will be in touch.</p>
+      <h3 class="reqs__title" data-reveal data-i18n="ap.req">Requirements</h3>
+      <ul class="reqs">
+        <li data-reveal><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg><span data-i18n="ap.r1">Aged 18–28 (Miss division)</span></li>
+        <li data-reveal><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg><span data-i18n="ap.r2">Minimum height of 1.68 m</span></li>
+        <li data-reveal><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg><span data-i18n="ap.r3">At least one foreign language</span></li>
+        <li data-reveal><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg><span data-i18n="ap.r4">Commitment to a social impact project</span></li>
+        <li data-reveal><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.2 9.8L24 12l-9.8 2.2L12 24l-2.2-9.8L0 12l9.8-2.2z"/></svg><span data-i18n="ap.r5">Knowledge of her country’s culture and history</span></li>
+      </ul>
+    </div>
+    <form class="form" novalidate data-reveal>
+      <div class="form__head">
+        <img src="assets/img/crown-640.webp" alt="" width="64" height="64" loading="lazy">
+        <div><p class="form__kicker" data-i18n="fm.kicker">Season 2027</p><p class="form__title" data-i18n="fm.title">Pre-Registration</p></div>
+      </div>
+      <div class="form__grid">
+        <div class="field"><input id="f-name" name="name" type="text" placeholder=" " required autocomplete="name"><label for="f-name" data-i18n="fm.name">Full name</label><small class="field__err"></small></div>
+        <div class="field"><input id="f-email" name="email" type="email" placeholder=" " required autocomplete="email"><label for="f-email" data-i18n="fm.email">Email</label><small class="field__err"></small></div>
+        <div class="field"><input id="f-phone" name="phone" type="tel" placeholder=" " autocomplete="tel"><label for="f-phone" data-i18n="fm.phone">Phone</label><small class="field__err"></small></div>
+        <div class="field field--select">
+          <select id="f-country" name="country" required>
+            <option value="" data-i18n="fm.choose">Choose…</option>
+            <option>Türkiye</option><option>Azerbaijan</option><option>Kazakhstan</option><option>Uzbekistan</option><option>Georgia</option><option>Hungary</option><option>Romania</option><option>Greece</option><option>Italy</option><option>France</option><option>Germany</option><option>United Kingdom</option><option>Spain</option><option>Brazil</option><option>Mexico</option><option>United States</option><option>India</option><option>Philippines</option><option>Thailand</option><option>Japan</option><option>Nigeria</option><option>South Africa</option><option>Egypt</option><option>United Arab Emirates</option>
+            <option data-i18n="fm.other">Other</option>
+          </select>
+          <label for="f-country" class="is-static" data-i18n="fm.country">Country</label><small class="field__err"></small>
+        </div>
+        <div class="field"><input id="f-age" name="age" type="number" min="14" max="45" inputmode="numeric" placeholder=" " required><label for="f-age" data-i18n="fm.age">Age</label><small class="field__err"></small></div>
+        <div class="field"><input id="f-height" name="height" type="number" min="140" max="210" inputmode="numeric" placeholder=" "><label for="f-height" data-i18n="fm.height">Height (cm)</label><small class="field__err"></small></div>
+        <div class="field field--full">
+          <span class="field__label" data-i18n="fm.division">Division</span>
+          <div class="pills" role="radiogroup">
+            <label class="pill"><input type="radio" name="division" value="miss" checked><span>Miss</span></label>
+            <label class="pill"><input type="radio" name="division" value="mrs"><span>Mrs.</span></label>
+            <label class="pill"><input type="radio" name="division" value="teen"><span>Teen</span></label>
+          </div>
+        </div>
+        <div class="field field--full"><input id="f-ig" name="instagram" type="text" placeholder=" "><label for="f-ig">Instagram</label><small class="field__err"></small></div>
+        <div class="field field--full"><textarea id="f-msg" name="message" rows="3" placeholder=" "></textarea><label for="f-msg" data-i18n="fm.msg">Tell us about yourself</label><small class="field__err"></small></div>
+        <div class="field field--full">
+          <label class="check"><input type="checkbox" name="consent" required><i></i><span data-i18n="fm.consent">I consent to the processing of my personal data in accordance with the privacy policy.</span></label>
+          <small class="field__err"></small>
+        </div>
+      </div>
+      <button class="btn btn--gold btn--block" type="submit"><span data-i18n="fm.submit">Submit Pre-Registration</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+      <p class="form__note" data-i18n="fm.note">Demo form — no data is sent.</p>
+      <div class="form__success" role="status">
+        <div class="form__success-crown"><img src="assets/img/crown-640.webp" alt="" width="640" height="640" loading="lazy"></div>
+        <p class="form__title" data-i18n="fm.ok.t">Thank you, queen!</p>
+        <p data-i18n="fm.ok.d">Your pre-registration has been received. Your national director will contact you shortly.</p>
+        <button type="button" class="link-arrow form__again"><span data-i18n="fm.again">New registration</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+      </div>
+      <span hidden data-i18n="fm.err.req">This field is required</span>
+      <span hidden data-i18n="fm.err.email">Please enter a valid email</span>
+      <span hidden data-i18n="fm.err.consent">Please accept to continue</span>
+    </form>
+  </div>
+</section>
